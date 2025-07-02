@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>input 외 입력 태그들</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>음료 주문</legend>
+            <h2>음료를 고르세요</h2>
+                <!--추후 처리를 위해 value 속성 추가해야함
+                    selected : 기본적으로 선택되는 option 설정
+                    multiple : ctrl 버튼 누른 상태로 여러 개 선택 가능
+                    size : 목록에 몇 개씩 보이는지 설정-->
+            <select multiple size="2">        
+                <option value="coffee">커피</option>
+                <option value="coke">콜라</option>
+                <option value="juice">쥬스</option>
+                <option value="water">생수</option>
+            </select>
+
+            <h2>기타 음료를 원한다면 자유롭게 써주세요</h2>
+            <textarea cols="30" rows="10"></textarea>
+
+        </fieldset>
+        <h2>우리의 준비 상태는 아래와 같습니다</h2>
+        <progress max="100" value="80"></progress>
+
+        <h2>추가 용무가 있으면 호출해주세요</h2>
+        <button>호출</button>
+        <input type="button" value="호출">
+    </body>
+</html>
