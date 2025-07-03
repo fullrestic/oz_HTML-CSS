@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>위치 지정하기</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: orange;
+        }
+        .rel{
+            background-color: red;;
+            position: relative; /*원래 있어야 할 곳 기준으로 이동*/
+            top: 50px;
+            left: 50px;
+        }
+        .abs{
+            /*
+            앱솔루트 요소는 position 속성을 가진 요소를 기준으로 위치 이동.
+            단, 상위 요소 중에 position 속성을 가진 요소가 없다면 
+            화면을 기준으로 이동
+            */
+            position: absolute; /*문서의 흐름에서 제외시킴*/
+            right: 50px;
+            top: 50px;
+        }
+
+        /* fixed 효과 잘 보기 위해 스크롤 만들어주는 긴 블록을 둠 */
+        .scroll{
+            height:2000px;
+        }
+        .fixed{
+            position: fixed; /* 원래 있어야 할 위치 무시, 어떤 상황에서도 화면 기준 정해진 위치에 있음(페이지 스크롤을 내려도 고정) */
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="abs">1</div>
+    <div class="rel">2</div>
+    <div class="scroll">3</div>
+    <div class="fixed">4</div>
+</body>
+</html>

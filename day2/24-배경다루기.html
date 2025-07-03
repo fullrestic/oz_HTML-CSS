@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>배경 다루기</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            border: 20px double green;
+
+            /* background-color: yellowgreen; */
+            background-clip: border-box;
+
+            background-image: url(images/rabbitandladybug.png);
+            background-size: 200px 200px; /*기본적으로 남는 영역에 바둑판 효과 적용됨*/
+            background-repeat: no-repeat; /* repeat 바둑판, no-repeat 반복x, repeat-x 가로만 반복, repeat-y 세로만 반복 */
+
+            background-origin: content-box; /* 어디서부터 시작할지 지정, padding-box가 기본값 */
+            background-position: center; /* center, left, right, bottom, top 키워드 사용, 두가지 키워드 같이 사용 가능, 수치 입력도 가능*/
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

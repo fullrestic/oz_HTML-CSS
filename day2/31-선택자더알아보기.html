@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /*
+        기호와 함께 사용하는 속성 선택자
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부
+
+        width *= 5
+        width ^= 5
+        width $= 5
+        */
+        [alt]{
+            border: 5px dashed red;
+        }
+
+        p > em{
+            color:blue;
+        }
+        
+        /* 
+        모든 형제
+        형제 선택자는 뒤이어 등장하는 형제들을 대상으로 한다
+        */
+        #sam ~ p{
+            color: lightgreen;
+        }
+
+        /* 인접 형제 */
+        #sam + p{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/sushi.jpg" width="120" alt="초밥">
+    <img src="images/sushi.jpg" width="120">
+    <img src="images/sushi.jpg" width="120" id="sam">
+    <p>호 오마카세는 스시 오마카세 전문점으로, 경남 김해시에 위치해있습니다.</p>
+    <p>합리적인 가격으로 오마카세의 대중화를 선도하고 있습니다.</p>
+    <p>호 오마카세 세트는 2,5000원으로, 구성은 <em>후토마끼</em>를 포함해 꽤 알찹니다.</p>
+    <p>참치 둘, 연어 둘이 포함되어 있다는 것이 특히 좋았습니다.</p>
+</body>
+</html>

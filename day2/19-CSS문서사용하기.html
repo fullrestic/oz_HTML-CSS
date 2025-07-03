@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS 문서 사용하기</title>
+
+    <!--내부 스타일 시트, 스타일 태그
+    CSS에서도 enter나 공백에 영향을 받지 않음
+    인라인 스타일은 우선적으로 적용됨
+    인라인 스타일이 아닐 경우 나중에 쓰여진 선언문이 적용됨
+    -->
+    <style>
+        p{
+            color:orange
+        }
+    </style>
+
+    <!--외부 문서와 연결-->
+    <link href="CSS문서사용하기.css" rel="stylesheet">
+</head>
+<body>
+    <!--인라인 스타일-->
+    <p style="color:red; opacity:20;">스타일 적용 실험 : 색깔만 바꿔보자</p>
+
+    
+    <p>스타일 적용 실험 : 색깔만 바꿔보자</p>
+    <p>스타일 적용 실험 : 색깔만 바꿔보자</p>
+</body>
+</html>
