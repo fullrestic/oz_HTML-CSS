@@ -1,0 +1,40 @@
+*{
+    text-align: center;
+}
+
+html{
+    background-color: #F5ECD5;
+    font-size: 16px;
+}
+
+body{
+    width: 640px;
+    margin: auto; /* 너비에서 남는 여백을 동일하게 분배 */
+}
+
+h1{
+    font-size: 48px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 200;    
+}
+
+h2{
+    font-size: 30px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 100;   
+}
+
+#fun-facts{
+    border: 4px dotted #A4B465;
+    line-height: 40px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+p{
+    font-size: 1.2rem;
+}
